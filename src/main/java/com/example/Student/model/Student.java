@@ -1,42 +1,42 @@
 package com.example.Student.model;
 
 public class Student {
+    private int id;
     private String name;
-    private int ID;
     private int age;
 
-    public Student(){
+    public Student() {
 
     }
 
-    public Student(String name, int ID, int age){
+    public Student(String name, int age) {
+
         this.name = name;
         this.age = age;
-        this.ID = ID;
     }
 
-    public void setName(String name){
-        this.name = name;
-    }
-
-    public void setAge(int age){
-        this.age = age;
-    }
-
-    public void setID(int ID){
-        this.ID = ID;
-    }
-
-    public String getName(){
+    public String getName() {
         return name;
     }
 
-    public int getAge(){
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getAge() {
         return age;
     }
 
-    public int getID(){
-        return ID;
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int ID) {
+        this.id = ID;
     }
 
 }
